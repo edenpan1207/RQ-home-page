@@ -1,0 +1,6 @@
+$rqcolor: #37761D;
+
+@mixin img-hover {
+    transition: all 0.5s;
+    opacity: 0.6;
+}
