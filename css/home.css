@@ -17,6 +17,10 @@ section {
   background-color: #fff;
   margin-bottom: 20px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 568px) {
+    .course-box {
+      margin-left: 10px;
+      margin-right: 10px; } }
   .course-box h2 {
     font-size: 28px;
     padding-bottom: 5px;
