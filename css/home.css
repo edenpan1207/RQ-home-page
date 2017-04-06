@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0; }
 
+html, body {
+  width: 100%;
+  height: 100%; }
+
 body {
   font-family: 'Microsoft JhengHei';
   background: linear-gradient(#9d9d9d, rgba(157, 157, 157, 0.3), #9d9d9d, rgba(157, 157, 157, 0.3), #9d9d9d); }
@@ -33,20 +37,9 @@ section {
     height: 3px;
     margin: 10px auto;
     background-color: #37761D; }
-  .course-box > ul {
+  .course-box ul {
     list-style: none;
     padding: 0; }
-    .course-box > ul li .thumbnail {
-      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
-      .course-box > ul li .thumbnail img {
-        width: 100%; }
-        .course-box > ul li .thumbnail img:hover {
-          transition: all 0.5s;
-          opacity: 0.6; }
-      .course-box > ul li .thumbnail .caption {
-        text-align: center;
-        padding: 0;
-        margin: 0; }
   .course-box .service-box {
     list-style: none;
     padding: 0;
@@ -54,7 +47,8 @@ section {
     .course-box .service-box a {
       color: #37761D; }
       .course-box .service-box a img {
-        width: 100%; }
+        width: 100%;
+        margin-left: 10px; }
         .course-box .service-box a img:hover {
           transition: all 0.5s;
           opacity: 0.6; }
@@ -74,7 +68,9 @@ section {
     margin: 0;
     list-style: none; }
     .course-box .service-coach-course a img {
-      width: 100%; }
+      width: 100%;
+      margin-left: 10px;
+      margin-top: 18px; }
       .course-box .service-coach-course a img:hover {
         transition: all 0.5s;
         opacity: 0.6; }
@@ -83,6 +79,7 @@ section {
     .course-box .service-coach-course ul {
       list-style-type: none; }
       .course-box .service-coach-course ul li {
+        line-height: 24px;
         font-size: 15px;
         padding-right: 20px; }
         .course-box .service-coach-course ul li p {
@@ -109,161 +106,58 @@ section {
       color: #37761D;
       padding: 5px 30px;
       margin-top: 20px; }
-  .course-box .thumbnail img:hover {
-    transition: all 0.5s;
-    opacity: 0.6; }
-  .course-box .thumbnail .caption {
-    display: block; }
-    .course-box .thumbnail .caption h3 {
-      text-align: center;
-      font-weight: bold;
-      padding-bottom: 15px; }
-    .course-box .thumbnail .caption ul {
-      list-style: none;
-      padding: 0; }
-      .course-box .thumbnail .caption ul li {
-        font-size: 15px;
-        line-height: 1.6em; }
-    .course-box .thumbnail .caption a {
-      width: 100%;
-      border: 1px solid #37761D;
-      border-radius: 50px;
-      background-color: #37761D;
-      margin: 20px 0; }
-      .course-box .thumbnail .caption a:hover {
-        transition: all 0.5s;
-        opacity: 0.6; }
   .course-box .coach-choose img {
     width: 100%; }
+
+.imform-top {
+  padding: 5px; }
+  .imform-top a img {
+    border-radius: 5px;
+    height: 300px;
+    width: 100%; }
+    .imform-top a img:hover {
+      transition: all 0.5s;
+      opacity: 0.6; }
+
+.thumbnail {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
+  .thumbnail img {
+    width: 100%; }
+    .thumbnail img:hover {
+      transition: all 0.5s;
+      opacity: 0.6; }
+
+.caption {
+  display: block;
+  text-align: center; }
+  .caption h3 {
+    font-weight: bold;
+    padding-bottom: 15px; }
+    .caption h3 > a {
+      color: #37761D; }
+  .caption ul {
+    list-style: none;
+    padding: 0; }
+    .caption ul li {
+      font-size: 15px;
+      line-height: 1.6em; }
+  .caption > a {
+    width: 100%;
+    border: 1px solid #37761D;
+    border-radius: 50px;
+    background-color: #37761D;
+    margin: 20px 0; }
+    .caption > a:hover {
+      transition: all 0.5s;
+      opacity: 0.6; }
 
 .carousel {
   border-bottom: 1px solid gray; }
   .carousel .carousel-indicators li {
     border: 1px solid gray; }
-  .carousel .carousel-inner .item img {
-    margin: 0 auto;
-    width: 100%;
-    height: 100%; }
-
-.section-article {
-  width: 49%;
-  float: left; }
-  @media (max-width: 990px) {
-    .section-article {
-      width: 100%; } }
-
-.section-course {
-  width: 49%;
-  float: right; }
-  @media (max-width: 990px) {
-    .section-course {
-      width: 100%; } }
-
-/*
-.my-course-card {
-    margin-top: 20px;
-    padding-top: 1px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    background-color: rgba(255, 255, 255, 0.95);
-    h3 {
-        font-size: 32px;
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 10px;
-        text-shadow: 2px 2px 5px gray;
-        a {
-            color: #37761d;
-        }
-        @include ipad {
-            font-size: 26px;
-        }
-    }
-    center {
-        a {
-            margin-top: 10px;
-            margin-bottom: 30px;
-            margin-right: 5px;
-        }
-        .btn-pay {
-            background-color: #37761D;
-            &:hover {
-                background-color: #4a9f27;
-                border: 1px solid #4a9f27;
-            }
-        }
-    }
-}
-
-.card-inform {
-    border-radius: 30px;
-    min-height: 250px;
-    margin-left: 15px;
-    margin-right: 15px;
-    position: relative;
-    .card-status {
-        display: inline-block;
-        background-color: #4da529;
-        padding: 5px 10px;
-        border-radius: 10px;
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        > a {
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
-        }
-    }
-}
-
-// coach's background-image
-
-
-.second-lesson {
-    background-image: url(../img/hankcoach.jpg);
-    height: 200px;
-    @include bg-image
-}
-
-.third-lesson {
-    background-image: url(../img/wenyen2.jpg);
-    height: 200px;
-    @include bg-image
-}
-
-.forth-lesson {
-    background-image: url(../img/coachS_Mona.jpg);
-    height: 200px;
-    @include bg-image
-}
-
-.course-list {
-    list-style: none;
-    margin-top: 5px;
-    padding-right: 30px;
-    > li {
-        > ul {
-            > li {
-                display: inline-block;
-                padding-top: 10px;
-                padding-bottom: 5px;
-                border-bottom: 1px solid #D5D8DC;
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-.course-detail {
-    list-style: none;
-    font-size: 16px;
-    li {
-        padding: 3px 0;
-    }
-}
-
-.course-default {
-    line-height: 1em;
-    padding-bottom: 20px;
-}
-*/
+  .carousel .carousel-inner .item {
+    min-height: 300px; }
+    .carousel .carousel-inner .item img {
+      margin: 0 auto;
+      width: 100%;
+      min-height: 350px; }
