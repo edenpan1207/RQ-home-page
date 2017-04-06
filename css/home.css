@@ -20,7 +20,6 @@ section {
   border: 1px solid #fff;
   border-radius: 10px;
   background-color: #fff;
-  margin-bottom: 20px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); }
   @media (max-width: 568px) {
     .course-box {
@@ -54,6 +53,7 @@ section {
           transition: all 0.5s;
           opacity: 0.6; }
     .course-box .service-box hr {
+      width: 100%;
       height: 0px;
       margin: 10px 0; }
     .course-box .service-box .service-author {
@@ -111,6 +111,15 @@ section {
     .course-box .coach-choose img {
       width: 100%; }
 
+.custom-infom > h3 {
+  display: inline-block;
+  border-bottom: 3px solid #37761D;
+  padding-bottom: 5px;
+  margin-bottom: 20px; }
+
+.custom-infom > p {
+  font-size: 14px; }
+
 .imform-top {
   padding: 5px; }
   .imform-top a img {
@@ -120,6 +129,12 @@ section {
     .imform-top a img:hover {
       transition: all 0.5s;
       opacity: 0.6; }
+  @media (max-width: 990px) {
+    .imform-top {
+      margin-bottom: 20px; } }
+
+.rwd-mb {
+  margin-bottom: 20px; }
 
 .thumbnail {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
@@ -149,8 +164,14 @@ section {
   .carousel .carousel-indicators li {
     border: 1px solid gray; }
   .carousel .carousel-inner .item {
-    min-height: 300px; }
+    height: 300px; }
     .carousel .carousel-inner .item img {
       margin: 0 auto;
       width: 100%;
-      min-height: 350px; }
+      height: 350px; }
+      @media (max-width: 568px) {
+        .carousel .carousel-inner .item img {
+          height: 200px; } }
+    @media (max-width: 568px) {
+      .carousel .carousel-inner .item {
+        height: 200px; } }
