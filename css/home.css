@@ -3,7 +3,8 @@
   padding: 0;
   margin: 0; }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%; }
 
@@ -53,7 +54,6 @@ section {
           transition: all 0.5s;
           opacity: 0.6; }
     .course-box .service-box hr {
-      width: 100%;
       height: 0px;
       margin: 10px 0; }
     .course-box .service-box .service-author {
@@ -79,7 +79,7 @@ section {
     .course-box .service-coach-course ul {
       list-style-type: none; }
       .course-box .service-coach-course ul li {
-        line-height: 24px;
+        line-height: 23px;
         font-size: 15px;
         padding-right: 20px; }
         .course-box .service-coach-course ul li p {
@@ -106,8 +106,10 @@ section {
       color: #37761D;
       padding: 5px 30px;
       margin-top: 20px; }
-  .course-box .coach-choose img {
-    width: 100%; }
+  .course-box .coach-choose {
+    padding: 0; }
+    .course-box .coach-choose img {
+      width: 100%; }
 
 .imform-top {
   padding: 5px; }
@@ -141,15 +143,6 @@ section {
     .caption ul li {
       font-size: 15px;
       line-height: 1.6em; }
-  .caption > a {
-    width: 100%;
-    border: 1px solid #37761D;
-    border-radius: 50px;
-    background-color: #37761D;
-    margin: 20px 0; }
-    .caption > a:hover {
-      transition: all 0.5s;
-      opacity: 0.6; }
 
 .carousel {
   border-bottom: 1px solid gray; }
